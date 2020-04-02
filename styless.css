@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.grandfather {
+  height: 100%;
+  width: 100%;
+  display: flex; /*박스를 컨트롤 */
+  justify-content: space-around; /* flex-direction 에따라 수평 수직 바뀜*/
+  align-items: center; /* center, flex-end, flex-start, */ /* flex-direction 에따라 수평 수직 바뀜*/
+  background-color: rgb(76, 76, 238);
+}
+.father {
+  margin: 0px;
+  padding: 0px;
+  display: flex; /*박스를 컨트롤 */
+  justify-content: space-around; /* flex-direction 에따라 수평 수직 바뀜*/
+  align-items: center; /* center, flex-end, flex-start, */ /* flex-direction 에따라 수평 수직 바뀜*/
+  height: 30%;
+  width: 30%;
+  flex-direction: column;
+  background-color: rgb(230, 99, 99);
+  /* colunm - {justify - 수직, align- 수평} row(디폴트값)-{justify - 수평, align- 수직} */
+  flex-wrap: wrap; /* direction이 reverse면 */
+}
+.son {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(148, 148, 148);
+  height: 25%;
+  width: 25%;
+}
+.son:nth-child(2):hover {
+  background-color: red;
+}
